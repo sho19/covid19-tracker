@@ -1,10 +1,17 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Default Starter`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-    author: `@gatsbyjs`,
+    title: `Covid 19 tracker`,
+    description: `website to track countries effected with covid 19`,
+    author: `@shoaib`,
   },
   plugins: [
+    {
+      resolve: 'gatsby-source-contentful',
+      options:{
+        spaceId:'67ndya8i2232',
+        accessToken:'UORn0mY2Kz5OdAKe8Y8m2IpR3MVowkUexdRGyKLs7Ps'
+      }
+    },
     `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-source-filesystem`,
